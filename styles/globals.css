@@ -13,6 +13,7 @@ body {
   position: fixed;
   height: 100%;
   overflow: auto;
+  z-index: 1000;
 }
 
 .sidebar a {
@@ -34,7 +35,7 @@ body {
 } */
 
 div.content {
-  max-width: 900px;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
   padding: 1px 16px;
@@ -46,12 +47,39 @@ div.content {
   bottom: 0;
 }
 
+.links {
+  margin: 0px;
+  top: auto;
+  right: 10px;
+  bottom: 22px;
+  left: auto;
+  position: fixed;
+};
+
+.links p {
+  writing-mode: vertical-lr;
+}
+
+.links p a {
+  padding: 10px;
+  text-decoration: none;
+}
+
+.vertical-text {
+  writing-mode: vertical-lr;
+}
+
+.hero-div {
+  padding-top: 50px;
+}
+
 @media screen and (max-width: 700px) {
   .sidebar {
     width: 100%;
     height: auto;
     position: fixed;
     background-color: transparent;
+    opacity: 0.95;
   }
   .sidebar a {float: left;}
   div.content {
@@ -62,6 +90,42 @@ div.content {
   .sider-bottom {
     position: absolute;
     right: 0;
+  }
+
+  .links {
+    margin: 0px;
+    top: auto;
+    right: 22vw;
+    bottom: 22px;
+    left: auto;
+    position: fixed;
+    opacity: 0.95;
+  }
+
+  .links p {
+    writing-mode: horizontal-tb;
+  }
+  
+  .links p a {
+    padding: 10px;
+  }
+  
+  .vertical-text {
+    writing-mode: horizontal-tb;
+  }
+
+  .hero-div {
+    padding-top: 10px;
+  }
+}
+
+.blink-div {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
   }
 }
 

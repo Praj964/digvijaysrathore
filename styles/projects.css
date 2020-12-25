@@ -1,0 +1,39 @@
+/* * {
+    box-sizing: border-box;
+} */
+
+/* Create two equal columns that floats next to each other */
+.column {
+    padding-left: 10px;
+    float: left;
+    width: 48%;
+    color: #ffffff;
+    padding: 8px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        padding-left: 0px;
+        width: 100%;
+    }
+}
+
+.card {
+    margin: 0rem;
+    position: relative; 
+}
+
+.card-body {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}

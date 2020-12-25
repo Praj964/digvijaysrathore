@@ -1,0 +1,77 @@
+import ReadPost from "../../../src/ReadPost"
+
+export const meta = {
+  title: "React Context API 101",
+  description: "Think of a situation where you have two child components nested under a parent. For reference, look at the snippets from a Quotes app below, where App.js has two children QuotesIndex.js and QuotesList.js. The QuotesList components has the state (data) for all the",
+  date: {
+    display: "Nov 11, 2020",
+    use: 1608875253
+  },
+  readTime: 2 
+}
+
+export default ({ children }) => <ReadPost meta={meta}>{children}</ReadPost>
+
+# The Problem
+
+Think of a situation where you have two child components nested under a parent. For reference, look at the snippets from a Quotes app below, where App.js has two children QuotesIndex.js and QuotesList.js. 
+
+![carbon (4).png](https://cdn.hashnode.com/res/hashnode/image/upload/v1604766007735/sD6PiDG_m.png)
+
+The QuotesList components has the state (data) for all the quotes, it's an array of object.
+
+![carbon (5).png](https://cdn.hashnode.com/res/hashnode/image/upload/v1604766755045/sljSngnxt.png)
+
+Now, what if I want to show the number of quotes in my QuotesIndex component? Using something like 
+```
+<p>{quotes.length}</p>
+``` 
+but I don't have access to the quotes in QuotesList's state. 
+
+Props can only pass data from parent to child and not the opposite.  The fact that both QuotesList and QuotesIndex are on same level makes it quite tricky to share data.
+
+One possible way could be to shift quotes data/logic to a parent component, App.js in this case. Technically stating, the quotes will be stored in App.js's state and passed as props to both QuotesIndex (to show number of quotes) and QuotesList (to list out all the quotes).
+
+Take this into consideration that this option isn't viable at all for bigger projects where we have to manage dynamic data, do different fetch requests for it and perform logic with it. Moreover, making this parent-child relationship for all the components can be time consuming and prone to an overwhelming amount of errors. 🤷
+
+So the problem statement is — a component is required to share data with another component at the same or multiple different levels.
+
+# useContext 🚀
+
+Here comes useContext to the rescue!! *Context API provides a way to share data (or "state") between components without having to explicitly pass a prop through every level of the tree. * 
+
+It providers a way to make certain data available to all the components. 
+
+Want to know how this magic happens? Next section (i.e. Usage) got you covered.
+
+# Usage
+
+Oka, so now that you know why and what this weapon is. Let's learn how to use it!
+
+Firstly, we are going to move our state to a separate component/file and create what is called *context * in it.
+
+Below is the QuotesProvider.js file (just a naming convention). Note here, there are two  variables exported which aren't default so they are required to be imported using { } (curly braces). 
+
+![carbon (6).png](https://cdn.hashnode.com/res/hashnode/image/upload/v1604770117598/0vm3xEZKo.png)
+
+Now, to use the context in all our components we will "provide" it in our App.js -
+
+![carbon (7).png](https://cdn.hashnode.com/res/hashnode/image/upload/v1604770696547/sZlGz8JWY.png)
+
+Between the *QuotesProvider* we can pass all the components we want to use context with. 
+
+Using useContext hook, we can now fetch that data in both QuotesList & QuotesIndex and all the other components nested under QuotesProvider in App.js.
+
+QuotesIndex.js -
+
+![carbon (8).png](https://cdn.hashnode.com/res/hashnode/image/upload/v1604771037294/qCHN-FOL1.png)
+
+QuotesList.js -
+
+![carbon (9).png](https://cdn.hashnode.com/res/hashnode/image/upload/v1604771168227/eCUU8SyVu.png)
+
+We can also manipulate the state using setQuotes!
+
+**Note - It might seem confusing in the first go, try understanding the Quotes app example above and clone it for better understanding.**
+
+Thanks for reading! Let me know if you have any query related to Context API, in the comments or on  [Twitter](https://twitter.com/novadigvijay). ✨ 

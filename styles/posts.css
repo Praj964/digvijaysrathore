@@ -1,0 +1,11 @@
+.post-title {
+    border-bottom: "2px solid #fff";
+}
+
+.post-body img {
+    max-width: 100%;
+}
+
+.post a {
+    text-decoration: none;
+}

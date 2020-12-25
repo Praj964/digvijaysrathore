@@ -1,4 +1,6 @@
 import "../styles/globals.css"
+import "../styles/projects.css"
+import "../styles/posts.css"
 import { ThemeProvider } from "../utils/theme"
 
 function MyApp({ Component, pageProps }) {
