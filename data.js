@@ -26,12 +26,14 @@ export const ProjectsData = [
 ]
 
 export const NowData = {
-    updateStatement: "last updated on 24th december 2020, while planning for my last live stream for this year!",
+    updateStatement: "Last updated on 8th january 2020, between my half yearly exams of 11th standard.",
     updates: [
         "Working on Kotaru's V1",
+        "Coding for a freelance project",
         "Building forum.dev",
-        "Iterating thefriday",
+        "The Friday is on hold",
         "Playing valorant",
+        "Really active on Twitter",
         "Trying to study for school exams"
     ]
 }

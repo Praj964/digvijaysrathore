@@ -3,12 +3,19 @@
 } */
 
 /* Create two equal columns that floats next to each other */
-.column {
+.col-even {
+    float: left;
+    width: 49%;
+    color: #ffffff;
+    padding-bottom: 6px;
+}
+
+.col-odd {
     padding-left: 10px;
     float: left;
-    width: 48%;
+    width: 49%;
     color: #ffffff;
-    padding: 8px;
+    padding-bottom: 6px;
 }
 
 /* Clear floats after the columns */
@@ -20,7 +27,12 @@
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-    .column {
+    .col-even {
+        padding-left: 0px;
+        width: 100%;
+    }
+
+    .col-odd {
         padding-left: 0px;
         width: 100%;
     }

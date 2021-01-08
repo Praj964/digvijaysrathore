@@ -5,6 +5,7 @@ import { ThemeContext } from '../utils/theme'
 import Projects from '../src/projects'
 import {Post} from "../src/Post"
 import Link from 'next/link'
+import { NowData } from '../data'
 
 const Layout = dynamic(() => import("../src/layout"))
 
@@ -29,8 +30,21 @@ export default function Index() {
           <p style={{
             fontSize: "18px",
             lineHeight: "1.6"
-          }}>Hey! I am Digvijay. I like building digital products. I have been sharing my notes around coding, products, UX, startups, etc. on <Link href="/posts"><span style={InlineLinksStyle}>/posts</span></Link>. Know what I'm doing right now at <Link href="/now"><span style={InlineLinksStyle}>/now</span></Link>.</p>
+          }}>Hey! I am Digvijay. I write code, design UX and build products. I am interested in tech, startups, humans, evolution & philosophy and would love to have a chat around that. I have been sharing my notes at <Link href="/posts"><span style={InlineLinksStyle}>/posts</span></Link>. Below is what I'm spending most of my time at.</p>
         </div>
+
+        <ul style={{
+          fontSize: "18px",
+          lineHeight: "1.8"
+        }}>
+          <li>Building Kotaru</li>
+          <li>Learning Golang</li>
+        </ul>
+
+        <p style={{
+          fontSize: "18px",
+          lineHeight: "1.6"
+        }}>Know more about what I am upto at <Link href="/now"><span style={InlineLinksStyle}>/now</span></Link>.</p>
 
         <div style={{padding: 10}} />
         <Projects />
