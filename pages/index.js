@@ -46,6 +46,21 @@ export default function Index() {
           lineHeight: "1.6"
         }}>Know more about what I am upto at <Link href="/now"><span style={InlineLinksStyle}>/now</span></Link>.</p>
 
+        <p style={{
+          fontSize: "18px",
+          lineHeight: "1.6"
+        }}>Below is a list of some random but interesting facts about me.</p>
+
+        <ul style={{
+          fontSize: "18px",
+          lineHeight: "1.8"
+        }}>
+          <li>I won the Hack <a target="_blank" rel="noopener" href="https://hackinout.co"><span style={InlineLinksStyle}>InOut 7.0</span></a> by Devfolio.</li>
+          <li>My article got featured on <a target="_blank" rel="noopener" href="https://hashnode.com"><span style={InlineLinksStyle}>Hashnode</span></a>'s must read list.</li>
+          <li>I want to start streaming on Twitch.</li>
+          <li>I started web programming to work my own IOT platform which I never really built :(</li>
+        </ul>
+
         <div style={{padding: 10}} />
         <Projects />
       </Layout>
