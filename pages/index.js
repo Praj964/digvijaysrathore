@@ -15,7 +15,8 @@ export default function Index() {
 
   const InlineLinksStyle = {
     backgroundColor: mode ? "#F1F1F1" : "#1A1A1A",
-    color: mode ? "#000" : "#FFF"
+    color: mode ? "#000" : "#FFF",
+    textDecoration: "none"
   }
 
   return (
@@ -56,6 +57,7 @@ export default function Index() {
           lineHeight: "1.8"
         }}>
           <li>I won the Hack <a target="_blank" rel="noopener" href="https://hackinout.co"><span style={InlineLinksStyle}>InOut 7.0</span></a> by Devfolio.</li>
+          <li>Successfully recieved <a target="_blank" rel="noopener" href="https://twitter.com/atroyn"><span style={InlineLinksStyle}>BUIDL grant by Anton</span></a> for quitting Twitter for a week and building a product.</li>
           <li>My article got featured on <a target="_blank" rel="noopener" href="https://hashnode.com"><span style={InlineLinksStyle}>Hashnode</span></a>'s must read list.</li>
           <li>I want to start streaming on Twitch.</li>
           <li>I started web programming to work my own IOT platform which I never really built :(</li>
