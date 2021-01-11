@@ -23,16 +23,6 @@ body {
   text-align: center;
   text-decoration: none;
 }
- 
-/* .sidebar a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
-.sidebar a:hover:not(.active) {
-  background-color: #555;
-  color: white;
-} */
 
 div.content {
   max-width: 800px;
@@ -73,7 +63,7 @@ div.content {
   padding-top: 50px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   .sidebar {
     width: 100%;
     height: auto;
@@ -83,7 +73,6 @@ div.content {
   }
   .sidebar a {float: left;}
   div.content {
-    margin-left: 0;
     padding-top: 70px;
   }
 

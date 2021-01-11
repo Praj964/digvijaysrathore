@@ -28,6 +28,7 @@ export default function BlogPost({ children, meta}) {
         fontSize: "18px",
         lineHeight: "1.6"
       }}>{children}</article>
+      <div style={{padding: "50px"}} />
     </Layout>
   )
 }

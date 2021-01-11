@@ -15,8 +15,8 @@ export default function Index() {
 
   const InlineLinksStyle = {
     backgroundColor: mode ? "#F1F1F1" : "#1A1A1A",
-    color: mode ? "#000" : "#FFF",
-    textDecoration: "none"
+    color: "#000000",
+    backgroundColor: "#f3f169"
   }
 
   return (

@@ -6,6 +6,8 @@
     max-width: 100%;
 }
 
-.post a {
-    text-decoration: none;
+.post-body a {
+    text-decoration: none !important;
+    background-color: #f3f169;
+    color: #000000;
 }
