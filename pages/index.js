@@ -72,6 +72,7 @@ export default function Index() {
 
         <div style={{padding: 10}} />
         <Projects />
+        <div style={{padding: 50}} />
       </Layout>
     </div>
   )
