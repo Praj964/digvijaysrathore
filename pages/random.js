@@ -37,7 +37,7 @@ export default function Random() {
           <p style={{
             fontSize: "18px",
             lineHeight: "1.6"
-          }}><span style={SpanStyles}>Books</span> — {RandomBooks.statement}</p>
+          }}><span style={SpanStyles}>Books</span> — {RandomBooks.statement} You may link to have a look over <a target="_blank" rel="noopener" href="https://goodreads.com/digvijaysr"><span style={SpanStyles}>goodreads.com/digvijaysr</span></a> where I track my reading progress.</p>
           <ul style={{
             fontSize: "18px",
             lineHeight: "1.8"

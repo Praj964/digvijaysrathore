@@ -45,7 +45,7 @@ export const NowData = {
 }
 
 export const RandomBooks = {
-    statement: "I am challenging myself to read 100 books this year (2 books a week). I am trying to make a summary for every book I read. Here are all of them mentioned in the order I read them.",
+    statement: "I am challenging myself to read 100 books this year (2 books a week). I am trying to make a summary for every book I read.",
     books: [
         {
             name: "Range",
