@@ -6,7 +6,7 @@ import { NowData } from '../data'
 
 const Layout = dynamic(() => import("../src/layout"))
 
-export default function Posts() {
+export default function Now() {
 
   const [mode] = useContext(ThemeContext)
 
@@ -17,12 +17,12 @@ export default function Posts() {
 
   return (
     <div>
-      <Layout pageTitle="now — Digvijay" description="">
+      <Layout pageTitle="Now — Digvijay" description="">
         <div className="hero-div">
           <p style={{
             fontSize: "18px",
             lineHeight: "1.6"
-          }}><Link href="/"><span style={InlineLinksStyle}>home</span></Link> / <Link href="/"><span style={InlineLinksStyle}>now</span></Link></p>
+          }}><Link href="/"><span style={InlineLinksStyle}>home</span></Link> / <Link href="/now"><span style={InlineLinksStyle}>now</span></Link></p>
         </div>
 
         <div>

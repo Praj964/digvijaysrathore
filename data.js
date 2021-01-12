@@ -2,25 +2,31 @@ export const ProjectsData = [
     {
         project: "Kotaru",
         description: "",
-        image: "/kotaru.png",
+        image: "/projects/kotaru.png",
         link: "https://kotaru.io"
     },
     {
         project: "forum.dev",
         description: "",
-        image: "/forum-dev.png",
+        image: "/projects/forum-dev.png",
         link: "https://forum.dev"
+    },
+    {
+        project: "ZeroPass",
+        description: "",
+        image: "/projects/zeropass.png",
+        link: "https://devfolio.co/submissions/zeropass"
     },
     {
         project: "The Friday",
         description: "",
-        image: "/thefriday.png",
+        image: "/projects/friday-re.png",
         link: "https://thefriday.vercel.app"
     },
     {
         project: "Notes // Blog",
         description: "",
-        image: "/notes.png",
+        image: "/projects/notes.png",
         link: "/posts"
     }
 ]
@@ -35,5 +41,35 @@ export const NowData = {
         "Playing valorant",
         "Really active on Twitter",
         "Trying to study for school exams"
+    ]
+}
+
+export const RandomBooks = {
+    statement: "I am challenging myself to read 100 books this year (2 books a week). I am trying to make a summary for every book I read. Here are all of them mentioned in the order I read them.",
+    books: [
+        {
+            name: "Range",
+            author: "David Epstien",
+            link: ""
+        }
+    ]
+}
+
+export const RandomLinks = {
+    statement: "These are the links to interesting resources I found on the web. Feel free to reach out and contribute to this list.",
+    links: [
+        {
+            excerpt: "Advice by Patrick Collison",
+            link: "https://patrickcollison.com/advice"
+        }
+    ]
+}
+
+export const RandomMovies = {
+    statement: "Although I don't watch a lot of movies/TV shows but there are some to which once I am hooked, can't leave without ending up watching entire series.",
+    watch: [
+        {
+            name: "Young Sheldon"
+        }
     ]
 }

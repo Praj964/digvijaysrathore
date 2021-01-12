@@ -31,7 +31,10 @@ function Projects() {
                                 <p style={{
                                     position: "absolute",
                                     bottom: 4,
-                                    left: 16
+                                    left: 16,
+                                    backgroundColor: "#000",
+                                    color: "#fff",
+                                    padding: 5
                                 }}>{item.project}</p>
                             </div>
                         </div>

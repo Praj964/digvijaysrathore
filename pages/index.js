@@ -30,48 +30,42 @@ export default function Index() {
 
 
         <div className="hero-div">
-          <h1 style={{
-            fontWeight: "900px"
-          }}>Hey, I'm Digvijay!</h1>
           <p style={{
             fontSize: "18px",
             lineHeight: "1.6"
-          }}>I write code, design UX and build products. I am interested in tech, startups, humans, evolution & philosophy and would love to have a chat around that. I have been sharing my notes at <Link href="/posts"><span style={InlineLinksStyle}>/posts</span></Link>. Below is what I'm spending most of my time at.</p>
+          }}>Hey! I'm <a href="https://twitter.com/novadigvijay" target="_blank" rel="noopener"><span style={InlineLinksStyle}>Digvijay</span></a>. I write code, design UX and build products. Currently, I am working on <a href="https://kotaru.io" target="_blank" rel="noopener"><span style={InlineLinksStyle}>Kotaru</span></a>, a platform to share your personal notes with ease. Browse through my <a href="#projects"><span style={InlineLinksStyle}>projects</span></a> mentioned below.
+          </p>
+          <p style={{
+            fontSize: "18px",
+            lineHeight: "1.6"
+          }}>
+          I am interested in tech, startups, humans, evolution & philosophy and would love to have a chat around that. I have been sharing my notes at <Link href="/posts"><span style={InlineLinksStyle}>/posts</span></Link>.
+          </p>
+          <p style={{
+            fontSize: "18px",
+            lineHeight: "1.6"
+          }}>
+          Visit <Link href="/now"><span style={InlineLinksStyle}>/now</span></Link> to know more about what I am upto and <Link href="/random"><span style={InlineLinksStyle}>/random</span></Link> to read some random facts about me.
+          </p>
         </div>
 
-        <ul style={{
-          fontSize: "18px",
-          lineHeight: "1.8"
-        }}>
-          <li>Building Kotaru</li>
-          <li>Learning Golang</li>
-        </ul>
-
         <p style={{
-          fontSize: "18px",
-          lineHeight: "1.6"
-        }}>Know more about what I am upto at <Link href="/now"><span style={InlineLinksStyle}>/now</span></Link>.</p>
-
-        <h1>Random</h1>
-
-        <p style={{
-          fontSize: "18px",
-          lineHeight: "1.6"
-        }}>Below is a list of some random but interesting facts about me.</p>
+          fontSize: "18px"
+        }}>By the way,</p>
 
         <ul style={{
           fontSize: "18px",
           lineHeight: "1.8"
         }}>
-          <li>I won the Hack <a target="_blank" rel="noopener" href="https://hackinout.co"><span style={InlineLinksStyle}>InOut 7.0</span></a> by Devfolio.</li>
+          <li>I won the <a target="_blank" rel="noopener" href="https://hackinout.co"><span style={InlineLinksStyle}>InOut 7.0</span></a> by Devfolio.</li>
           <li>Successfully recieved <a target="_blank" rel="noopener" href="https://twitter.com/atroyn"><span style={InlineLinksStyle}>BUIDL grant by Anton</span></a> for quitting Twitter for a week and building a product.</li>
           <li>My article got featured on <a target="_blank" rel="noopener" href="https://hashnode.com"><span style={InlineLinksStyle}>Hashnode</span></a>'s must read list.</li>
-          <li>I want to start streaming on Twitch.</li>
-          <li>I started web programming to work my own IOT platform which I never really built :(</li>
         </ul>
 
         <div style={{padding: 10}} />
-        <Projects />
+        <div id="projects">
+          <Projects />
+        </div>
         <div style={{padding: 50}} />
       </Layout>
     </div>

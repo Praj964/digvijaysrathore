@@ -22,6 +22,10 @@
     margin-top: 8px;
 }
 
+button {
+    outline: none;
+}
+
 .search-input {
     border: none;
     width: 90.5%;
