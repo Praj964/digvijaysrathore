@@ -74,8 +74,7 @@ export default function Posts() {
           <input value={input} onChange={(e) => onChange(e)} className="search-input" style={{
             backgroundColor: mode ? "#fff" : "#1a1a1a",
             color: mode ? "#000" : "#fff"
-          }} autoFocus />
-          <button type="submit"><FaSearch /></button>
+          }} placeholder="Search" />
         </div>
         
         <div style={{padding: 10}} />
