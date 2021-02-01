@@ -8,16 +8,6 @@ function isEven(n) {
 function Projects() {
     return (
         <div>
-            {/* <div style={{fontWeight: "900", letterSpacing: "2", fontSize: 18}}>
-                work
-                <div className="blink-div" style={{
-                    backgroundColor: "#fc5185",
-                    height: 15,
-                    width: 10,
-                    display: "inline-block"
-                }} />
-            </div> */}
-
             <div>
                 <div className="row">
                     {ProjectsData.map((item, index) => (
