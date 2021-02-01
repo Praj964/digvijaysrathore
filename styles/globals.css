@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap');
 
 body {
   margin: 0px;
@@ -59,8 +60,12 @@ div.content {
   writing-mode: vertical-lr;
 }
 
-.hero-div {
+.main-div {
   padding-top: 50px;
+}
+
+.main-text {
+  font-family: 'Cormorant Garamond', serif;
 }
 
 @media screen and (max-width: 1200px) {
@@ -84,7 +89,7 @@ div.content {
   .links {
     margin: 0px;
     top: auto;
-    right: 22vw;
+    right: 25%;
     bottom: 22px;
     left: auto;
     position: fixed;
@@ -103,7 +108,7 @@ div.content {
     writing-mode: horizontal-tb;
   }
 
-  .hero-div {
+  .main-div {
     padding-top: 10px;
   }
 }
