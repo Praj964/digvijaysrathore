@@ -71,7 +71,7 @@ export default function Posts() {
   return (
     <div>
       <Layout pageTitle="Writing Archives — Digvijay" description="">
-        <div className="hero-div">
+        <div className="main-div">
           <p style={{
             fontSize: "18px",
             lineHeight: "1.6"
