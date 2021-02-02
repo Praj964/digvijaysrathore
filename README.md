@@ -10,6 +10,6 @@ I am keeping this repository open source to let anyone fork and start publishing
 
 Together building a community of independent domains that we network together in novel ways, to build decentralized media, read more [here](https://balajis.com/how-to-gradually-exit-twitter/). You can [fork](https://github.com/digvijaysrathore/digvijaysrathore/fork) and deploy on your own.
 
-You can find a list of individuals who maintain a public wiki or knowledge base [here](https://digvijaysr.com/note/wikis)
+You can find a list of individuals who maintain a public wiki or knowledge base [here](https://github.com/digvijaysrathore/digvijaysrathore/blob/main/wikis.md)
 
-> Edit [/wikis.md]() to add a link to your wiki. I request you to keep a backlink to this repository on your site.
+> Edit [/wikis.md](https://github.com/digvijaysrathore/digvijaysrathore/blob/main/wikis.md) to add a link to your wiki. I request you to keep a backlink to this repository on your site.
