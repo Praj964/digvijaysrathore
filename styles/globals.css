@@ -65,7 +65,7 @@ div.content {
 }
 
 .main-text {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: "Inter", sans-serif;
 }
 
 @media screen and (max-width: 1200px) {
@@ -89,7 +89,7 @@ div.content {
   .links {
     margin: 0px;
     top: auto;
-    right: 25%;
+    right: 20%;
     bottom: 22px;
     left: auto;
     position: fixed;

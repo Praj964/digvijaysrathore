@@ -27,7 +27,7 @@ export const ProjectsData = [
         project: "Notes // Blog",
         description: "",
         image: "/projects/notes.png",
-        link: "/posts"
+        link: "/notes"
     }
 ]
 

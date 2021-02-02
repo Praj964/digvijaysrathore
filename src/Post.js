@@ -12,7 +12,7 @@ export const Post = ({ post, isBlogPost }) => {
 
   return (
     <article>
-      <Link href={'/posts' + link}>
+      <Link href={'/note' + link}>
         <div>
           <div style={{
             display: "flex",
@@ -20,7 +20,7 @@ export const Post = ({ post, isBlogPost }) => {
           }}>
             <p style={{
               display: "inline",
-              fontSize: "18px"
+              fontSize: "20px"
             }} className="post-title">{module.title}</p>
             <p style={{
               display: "inline",

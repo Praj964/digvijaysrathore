@@ -8,7 +8,7 @@ import * as JsSearch from 'js-search';
 
 const Layout = dynamic(() => import("../src/layout"))
 
-export default function Posts() {
+export default function Notes() {
 
   const [mode] = useContext(ThemeContext)
   const [data, setData] = useState([])
@@ -73,25 +73,25 @@ export default function Posts() {
       <Layout pageTitle="Writing Archives — Digvijay" description="">
         <div className="main-div">
           <p style={{
-            fontSize: "18px",
+            fontSize: "20px",
             lineHeight: "1.6"
           }}><Link href="/"><span style={InlineLinksStyle}>home</span></Link> / <Link href="/posts"><span style={InlineLinksStyle}>writing archives</span></Link></p>
         </div>
 
-        <Link href={`/posts`}>
+        <Link href={`/notes`}>
           <span style={{
               borderBottom: "4px solid #f3f169",
               marginRight: "15px",
-              fontSize: "18px"
+              fontSize: "20px"
           }}>All</span>
         </Link>
 
         {categories.map((item, index) => (
-          <Link key={index} href={`/wiki/${item}`}>
+          <Link key={index} href={`/r/${item}`}>
             <span style={{
                 borderBottom: "4px solid #f3f169",
                 marginRight: "15px",
-                fontSize: "18px"
+                fontSize: "20px"
             }}>{item}</span>
           </Link>
         ))}
